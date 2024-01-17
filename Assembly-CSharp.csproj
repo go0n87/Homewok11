@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXUnityMaterialGetter.cs" />
+    <Compile Include="Assets\Resorces\Scripts\CameraMover.cs" />
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXExporter.cs" />
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXUnityMeshGetter.cs" />
-    <Compile Include="Assets\Resorces\Scripts\GamePause.cs" />
     <Compile Include="Assets\Resorces\Scripts\BallController.cs" />
-    <Compile Include="Assets\Resorces\Scripts\CameraMover.cs" />
+    <Compile Include="Assets\Resorces\Scripts\GamePause.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -696,7 +696,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 2
 --- !u!4 &1473802158 stripped
 Transform:
@@ -720,8 +720,24 @@ MonoBehaviour:
   MoveLeft: 97
   MoveRight: 100
   Jump: 32
-  MoveSpeed: 3
+  MoveSpeed: 0.001
   JumpForce: 100
+--- !u!111 &1473802164
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473802153}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 1327b8132f864c8458874af64350cfb3, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1327b8132f864c8458874af64350cfb3, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1770797283
 GameObject:
   m_ObjectHideFlags: 0

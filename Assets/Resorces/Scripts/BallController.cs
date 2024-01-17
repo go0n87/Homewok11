@@ -26,23 +26,27 @@ public class BallController : MonoBehaviour
     {
         if (Input.GetKey(MoveForvard))
             {
-                Vector3 movement = new Vector3(1f, 0.0f, 0.0f);
-                _rb.AddForce(movement * MoveSpeed);
+                Vector3 movement = new Vector3(0.1f, 0.0f, 0.0f);
+                transform.position += movement;
+                //_rb.AddForce(movement * MoveSpeed);
             }
         if (Input.GetKey(MoveTovad))
             {
-                Vector3 movement = new Vector3(-1f, 0.0f, 0.0f);
-                _rb.AddForce(movement * MoveSpeed);
+                Vector3 movement = new Vector3(-0.1f, 0.0f, 0.0f);
+                transform.position += movement;
+                //_rb.AddForce(movement * MoveSpeed);
             }
         if (Input.GetKey(MoveLeft))
             {
-                Vector3 movement = new Vector3(0.0f, 0.0f, 1f);
-                _rb.AddForce(movement * MoveSpeed);
+                Vector3 movement = new Vector3(0.0f, 0.0f, 0.1f);
+                transform.position += movement;
+                //_rb.AddForce(movement * MoveSpeed);
             }
         if (Input.GetKey(MoveRight))
             {
-                Vector3 movement = new Vector3(0.0f, 0.0f, -1f);
-                _rb.AddForce(movement * MoveSpeed);
+                Vector3 movement = new Vector3(0.0f, 0.0f, -0.1f);
+                transform.position += movement;
+                //_rb.AddForce(movement * MoveSpeed);
             }
     }
     private void JumpLogic()
