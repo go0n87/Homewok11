@@ -354,6 +354,8 @@
 "Assets/Packages/UnityFBXExporter/FBXExporter.cs"
 "Assets/Packages/UnityFBXExporter/FBXUnityMaterialGetter.cs"
 "Assets/Packages/UnityFBXExporter/FBXUnityMeshGetter.cs"
+"Assets/Resorces/Scripts/BallController.cs"
+"Assets/Resorces/Scripts/CameraMover.cs"
 "Assets/Resorces/Scripts/GamePause.cs"
 -langversion:9.0
 
