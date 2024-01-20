@@ -67,11 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6480faa69c91a36468165f56004fcb72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sphere: {fileID: 3676449465986580356}
-  UpDistance: 4
-  UpAniamtionNumber: 2
-  DownAniamtionNumber: 4
-  LastAniamtionNumber: 5
+  _numberOfAnimation: 0
+  LastAniamtionNumber: 2
+  CountOfIteration: 0
 --- !u!1 &3676449465986580356
 GameObject:
   m_ObjectHideFlags: 0
