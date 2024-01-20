@@ -10,7 +10,6 @@ public class CameraMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        transform.position = PlayerTransform.position  + Distance;
+        transform.position = PlayerTransform.position + Distance;
     }
 }

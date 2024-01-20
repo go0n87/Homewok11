@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class MillAnimationChanger : MonoBehaviour
 {
-    private int _numberOfAnimation;
     private Animator _animator;
+    private int _numberOfAnimation;    
     private int _currentIteration = 0;
     public int LastAniamtionNumber;
     public int CountOfIteration = 0;
     void Start()
     {
         _animator = GetComponent<Animator>();
-
     }
     public void ChangeAnimationNumber()
     {
@@ -22,9 +21,9 @@ public class MillAnimationChanger : MonoBehaviour
             _currentIteration = 0;
             _animator.SetInteger("NumberAnimation", _numberOfAnimation);
         }
-        else 
+        else
         {
             _currentIteration++;
-        }         
+        }
     }
 }

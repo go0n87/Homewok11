@@ -17,7 +17,7 @@ public class GamePause : MonoBehaviour
     }
 
     public void OnClickPause()
-    {        
+    {
         if (_isPause)
         {
             Time.timeScale = 1;
@@ -26,7 +26,7 @@ public class GamePause : MonoBehaviour
         else
         {
             Time.timeScale = 0;
-            _currentImage.sprite = PauseButton;            
+            _currentImage.sprite = PauseButton;
         }
 
         MenuPanel.SetActive(!_isPause);
