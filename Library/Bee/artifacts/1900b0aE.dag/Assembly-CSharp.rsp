@@ -356,7 +356,10 @@
 "Assets/Packages/UnityFBXExporter/FBXUnityMeshGetter.cs"
 "Assets/Resorces/Scripts/BallController.cs"
 "Assets/Resorces/Scripts/CameraMover.cs"
+"Assets/Resorces/Scripts/ChangeScene.cs"
+"Assets/Resorces/Scripts/GameEvent.cs"
 "Assets/Resorces/Scripts/GamePause.cs"
+"Assets/Resorces/Scripts/MillAnimationChanger.cs"
 -langversion:9.0
 
 /deterministic
