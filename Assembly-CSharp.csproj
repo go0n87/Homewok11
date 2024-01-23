@@ -62,7 +62,9 @@
     <Compile Include="Assets\Resorces\Scripts\GameEvent.cs" />
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXUnityMeshGetter.cs" />
     <Compile Include="Assets\Resorces\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Resorces\Scripts\BallMovement.cs" />
     <Compile Include="Assets\Resorces\Scripts\MillAnimationChanger.cs" />
+    <Compile Include="Assets\Resorces\Scripts\GlobalStringVars.cs" />
     <Compile Include="Assets\Resorces\Scripts\BallController.cs" />
     <Compile Include="Assets\Resorces\Scripts\GamePause.cs" />
   </ItemGroup>

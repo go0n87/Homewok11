@@ -5,11 +5,14 @@ using UnityEngine;
 public class CameraMover : MonoBehaviour
 {
     public Transform PlayerTransform;
-    public Vector3 Distance;
+    private Vector3 _offset;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        _offset = transform.position - PlayerTransform.transform.position;
+    }
     void Update()
     {
-        transform.position = PlayerTransform.position + Distance;
+        transform.position = PlayerTransform.position + _offset;
     }
 }

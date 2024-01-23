@@ -2,117 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallController : MonoBehaviour
+namespace WildBall.GlobalStringVars
 {
-    public KeyCode MoveForvard;
-    public KeyCode MoveBack;
-    public KeyCode MoveLeft;
-    public KeyCode MoveRight;
-    public KeyCode Jump;
-    public float MoveSpeed;
-    public float JumpForce;
-
-    private Animator _currentAnimator;
-    private Rigidbody _rb;
-    private bool _isGrounded;
-    private bool _isMovingAnimation = false;
-    private bool _jumpCooldown = false;
-    private float _calculateTimer;
-    private float _calculateTimerDelta;
-
-    void Start()
+    [RequireComponent(typeof(BallMovement))]
+    public class BallController : MonoBehaviour
     {
-        _rb = GetComponent<Rigidbody>();
-        _currentAnimator = GetComponent<Animator>();
-        _calculateTimer = 0.1f;
-    }
-    void FixedUpdate()
-    {
-        MovementLogic();
-        JumpLogic();
-        _currentAnimator.SetBool("isGrounded", _isGrounded);
+        public float JumpForce;
+        private Vector3 _movement;      
+        private bool _isGrounded;
+        [SerializeField]private BallMovement _ballMovement;
+        private float _jump;
 
-        if (!_isGrounded)
+        void Start()
         {
-            _currentAnimator.SetFloat("Velocity_y", _rb.velocity.y);
+            Debug.Log("Start");
+            _ballMovement = GetComponent<BallMovement>();
         }
+        private void Update()
+        {
+            float horizontal = Input.GetAxis(GlobalStringVars.HORIZONTAL_AXIS);
+            float vertical = Input.GetAxis(GlobalStringVars.VERTICAL_AXIS);
+            _jump = Input.GetAxis(GlobalStringVars.JUMP_BUTTON);
 
-        if (_jumpCooldown)
-        {
-            CalculateJumpCoolDown();
+            Debug.Log("Update");
+            _movement = new Vector3(vertical, 0, -horizontal).normalized;
         }
-    }
-    private void MovementLogic()
-    {
-        if (Input.GetKey(MoveForvard))
+        private void FixedUpdate()
         {
-            Vector3 movement = new Vector3(MoveSpeed, 0.0f, 0.0f);
-            transform.position += movement;
-            _currentAnimator.SetBool("isMoving", true);
-            _isMovingAnimation = true;
+            _ballMovement.MovementLogic(_movement);
+            _ballMovement.JumpLogic(_jump, _isGrounded);
         }
-        if (Input.GetKey(MoveBack))
+        void OnCollisionExit(Collision collision)
         {
-            Vector3 movement = new Vector3(-MoveSpeed, 0.0f, 0.0f);
-            transform.position += movement;
-            _currentAnimator.SetBool("isMoving", true);
-            _isMovingAnimation = true;
-        }
-        if (Input.GetKey(MoveLeft))
-        {
-            Vector3 movement = new Vector3(0.0f, 0.0f, MoveSpeed);
-            transform.position += movement;
-            _currentAnimator.SetBool("isMoving", true);
-            _isMovingAnimation = true;
-        }
-        if (Input.GetKey(MoveRight))
-        {
-            Vector3 movement = new Vector3(0.0f, 0.0f, -MoveSpeed);
-            transform.position += movement;
-            _currentAnimator.SetBool("isMoving", true);
-            _isMovingAnimation = true;
-        }
-
-        if (!_isMovingAnimation && _currentAnimator.GetBool("isMoving") == true)
-        {
-            _currentAnimator.SetBool("isMoving", false);
-        }
-        _isMovingAnimation = false;
-    }
-    private void JumpLogic()
-    {
-        if (Input.GetKey(Jump) && !_jumpCooldown)
-        {
-            if (_isGrounded)
+            if (collision.gameObject.tag == ("Ground"))
             {
-                _rb.AddForce(Vector3.up * JumpForce);
+                _isGrounded = false;
+            }
+        }
+        void OnCollisionStay(Collision collision)
+        {
+            if (collision.gameObject.tag == ("Ground") && !_isGrounded)
+            {
+                _isGrounded = true;
             }
         }
     }
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == ("Ground") && !_jumpCooldown)
-        {
-            _isGrounded = false;
-        }
-    }
-    void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.tag == ("Ground") && !_isGrounded)
-        {
-            _isGrounded = true;
-            _jumpCooldown = true;
-            _currentAnimator.SetFloat("Velocity_y", 0f);
-        }
-    }
-    private void CalculateJumpCoolDown()
-    {
-        _calculateTimerDelta += Time.deltaTime;
-        if (_calculateTimerDelta >= _calculateTimer)
-        {
-            _jumpCooldown = false;
-            _calculateTimerDelta = 0f;
-        }
-    }
-
 }
