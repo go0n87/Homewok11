@@ -10,12 +10,11 @@ namespace WildBall.GlobalStringVars
         public float JumpForce;
         private Vector3 _movement;      
         private bool _isGrounded;
-        [SerializeField]private BallMovement _ballMovement;
+        private BallMovement _ballMovement;
         private float _jump;
 
         void Start()
         {
-            Debug.Log("Start");
             _ballMovement = GetComponent<BallMovement>();
         }
         private void Update()
@@ -23,8 +22,6 @@ namespace WildBall.GlobalStringVars
             float horizontal = Input.GetAxis(GlobalStringVars.HORIZONTAL_AXIS);
             float vertical = Input.GetAxis(GlobalStringVars.VERTICAL_AXIS);
             _jump = Input.GetAxis(GlobalStringVars.JUMP_BUTTON);
-
-            Debug.Log("Update");
             _movement = new Vector3(vertical, 0, -horizontal).normalized;
         }
         private void FixedUpdate()

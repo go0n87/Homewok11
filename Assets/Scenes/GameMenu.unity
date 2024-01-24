@@ -223,7 +223,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 182310500}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 516701872}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1265,7 +1265,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1693022197}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1547,7 +1547,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1928630416}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

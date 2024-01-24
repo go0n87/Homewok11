@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5326911087355302320}
   - component: {fileID: 6061702132443718720}
   - component: {fileID: -1281407610791251343}
+  - component: {fileID: 9062986713619304633}
   m_Layer: 0
   m_Name: Mill
   m_TagString: Untagged
@@ -67,9 +68,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6480faa69c91a36468165f56004fcb72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _numberOfAnimation: 0
   LastAniamtionNumber: 2
   CountOfIteration: 0
+--- !u!65 &9062986713619304633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3636561847026425734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15371297, y: 1, z: 6.230007}
+  m_Center: {x: 0.02989222, y: 0, z: 0.14154346}
 --- !u!1 &3676449465986580356
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,7 +94,6 @@ GameObject:
   - component: {fileID: 32248654975050809}
   - component: {fileID: 82049240212930854}
   - component: {fileID: 8940270381164609372}
-  - component: {fileID: 5980877725328867693}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -155,19 +167,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5980877725328867693
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3676449465986580356}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7237002150584476568
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +178,6 @@ GameObject:
   - component: {fileID: 2625942135710375787}
   - component: {fileID: 3763534430924584995}
   - component: {fileID: 6496728473064721417}
-  - component: {fileID: 7312816970394338278}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -252,16 +250,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7312816970394338278
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7237002150584476568}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

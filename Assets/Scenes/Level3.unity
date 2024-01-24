@@ -276,6 +276,14 @@ PrefabInstance:
       propertyPath: GamePanel
       value: 
       objectReference: {fileID: 1416165772}
+    - target: {fileID: 4655476603302566532, guid: fcbf4775e84d3544da6b0c549bba6af5, type: 3}
+      propertyPath: EventButton
+      value: 
+      objectReference: {fileID: 309623367}
+    - target: {fileID: 4655476603302566532, guid: fcbf4775e84d3544da6b0c549bba6af5, type: 3}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 1862426336}
     - target: {fileID: 4655476603302566535, guid: fcbf4775e84d3544da6b0c549bba6af5, type: 3}
       propertyPath: m_Name
       value: LoseSone
@@ -379,6 +387,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 962bcf384f2493a42afa119209c27430, type: 3}
+--- !u!1 &309623366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8580017007104459577, guid: 962bcf384f2493a42afa119209c27430, type: 3}
+  m_PrefabInstance: {fileID: 309623365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &309623367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6923342562720819859, guid: 962bcf384f2493a42afa119209c27430, type: 3}
+  m_PrefabInstance: {fileID: 309623365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &365887967
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +496,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 1015801950}
-  Distance: {x: -3, y: 1, z: 0}
 --- !u!1001 &490598668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -607,6 +624,14 @@ PrefabInstance:
       propertyPath: GamePanel
       value: 
       objectReference: {fileID: 1416165772}
+    - target: {fileID: 2372691524623856003, guid: ced810a0d2b7f5e42803d0bff0fd71b3, type: 3}
+      propertyPath: EventButton
+      value: 
+      objectReference: {fileID: 309623366}
+    - target: {fileID: 2372691524623856003, guid: ced810a0d2b7f5e42803d0bff0fd71b3, type: 3}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 1862426336}
     - target: {fileID: 2372691524623856004, guid: ced810a0d2b7f5e42803d0bff0fd71b3, type: 3}
       propertyPath: m_Name
       value: Gates
@@ -1262,6 +1287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef61678458ef2147a0f4d9d2d4e06fa, type: 3}
+--- !u!1 &1862426336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 414158887288700529, guid: cef61678458ef2147a0f4d9d2d4e06fa, type: 3}
+  m_PrefabInstance: {fileID: 1862426335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2054160055 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5407770959526888215, guid: 962bcf384f2493a42afa119209c27430, type: 3}

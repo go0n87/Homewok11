@@ -353,6 +353,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 962bcf384f2493a42afa119209c27430, type: 3}
+--- !u!1 &580916114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8580017007104459577, guid: 962bcf384f2493a42afa119209c27430, type: 3}
+  m_PrefabInstance: {fileID: 580916113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &580916115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6923342562720819859, guid: 962bcf384f2493a42afa119209c27430, type: 3}
+  m_PrefabInstance: {fileID: 580916113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &598166001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -458,6 +468,11 @@ PrefabInstance:
       objectReference: {fileID: 1628280180}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef61678458ef2147a0f4d9d2d4e06fa, type: 3}
+--- !u!1 &598166002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 414158887288700529, guid: cef61678458ef2147a0f4d9d2d4e06fa, type: 3}
+  m_PrefabInstance: {fileID: 598166001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &649051282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -517,6 +532,14 @@ PrefabInstance:
       propertyPath: GamePanel
       value: 
       objectReference: {fileID: 1628280180}
+    - target: {fileID: 4655476603302566532, guid: fcbf4775e84d3544da6b0c549bba6af5, type: 3}
+      propertyPath: EventButton
+      value: 
+      objectReference: {fileID: 580916115}
+    - target: {fileID: 4655476603302566532, guid: fcbf4775e84d3544da6b0c549bba6af5, type: 3}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 598166002}
     - target: {fileID: 4655476603302566535, guid: fcbf4775e84d3544da6b0c549bba6af5, type: 3}
       propertyPath: m_Name
       value: LoseSone
@@ -878,7 +901,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 1135285984}
-  Distance: {x: -3, y: 1, z: 0}
 --- !u!1 &1628280180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5407770959487019989, guid: 962bcf384f2493a42afa119209c27430, type: 3}
@@ -961,6 +983,14 @@ PrefabInstance:
       propertyPath: GamePanel
       value: 
       objectReference: {fileID: 1628280180}
+    - target: {fileID: 2372691524623856003, guid: ced810a0d2b7f5e42803d0bff0fd71b3, type: 3}
+      propertyPath: EventButton
+      value: 
+      objectReference: {fileID: 580916114}
+    - target: {fileID: 2372691524623856003, guid: ced810a0d2b7f5e42803d0bff0fd71b3, type: 3}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 598166002}
     - target: {fileID: 2372691524623856004, guid: ced810a0d2b7f5e42803d0bff0fd71b3, type: 3}
       propertyPath: m_Name
       value: Gates
