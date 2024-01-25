@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F57D07D6-76BD-0C96-1AC5-B020C1F39894}</ProjectGuid>
+    <ProjectGuid>{C28143A4-9E83-8808-0461-F2FB66BF3C9A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\Resorces\Scripts\GlobalStringVars.cs" />
     <Compile Include="Assets\Resorces\Scripts\BallController.cs" />
     <Compile Include="Assets\Resorces\Scripts\GamePause.cs" />
+    <Compile Include="Assets\Resorces\Scripts\AnimationController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

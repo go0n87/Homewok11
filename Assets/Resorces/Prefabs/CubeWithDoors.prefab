@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 3643931407844800571}
   - component: {fileID: 2520946668517721280}
   - component: {fileID: 5646380855978752809}
-  - component: {fileID: 6783280760382696372}
+  - component: {fileID: -6114133611242450984}
   m_Layer: 0
   m_Name: CubeWithDoors
   m_TagString: Ground
@@ -870,7 +870,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &6783280760382696372
+--- !u!95 &-6114133611242450984
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0

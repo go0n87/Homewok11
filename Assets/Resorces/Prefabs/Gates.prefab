@@ -256,8 +256,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GamePanel: {fileID: 0}
+  EventButton: {fileID: 0}
+  PauseButton: {fileID: 0}
   EventText: {fileID: 0}
-  NameEvent: Level is completed
+  CurrentEvent: 1
 --- !u!1 &2372691525117261414
 GameObject:
   m_ObjectHideFlags: 0
