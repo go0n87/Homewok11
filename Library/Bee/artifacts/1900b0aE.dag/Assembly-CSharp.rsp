@@ -331,6 +331,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Formats.Fbx.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AddOns.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AssetIdRemapUtility.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll"
@@ -357,12 +361,15 @@
 "Assets/Resorces/Scripts/AnimationController.cs"
 "Assets/Resorces/Scripts/BallController.cs"
 "Assets/Resorces/Scripts/BallMovement.cs"
+"Assets/Resorces/Scripts/BonusTakeEffect.cs"
 "Assets/Resorces/Scripts/CameraMover.cs"
 "Assets/Resorces/Scripts/ChangeScene.cs"
 "Assets/Resorces/Scripts/GameEvent.cs"
 "Assets/Resorces/Scripts/GamePause.cs"
 "Assets/Resorces/Scripts/GlobalStringVars.cs"
 "Assets/Resorces/Scripts/MillAnimationChanger.cs"
+"Assets/Resorces/Scripts/PlayerDestroy.cs"
+"Assets/Resorces/Scripts/TakeBonus.cs"
 -langversion:9.0
 
 /deterministic

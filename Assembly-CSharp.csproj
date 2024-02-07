@@ -60,14 +60,17 @@
     <Compile Include="Assets\Resorces\Scripts\CameraMover.cs" />
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXExporter.cs" />
     <Compile Include="Assets\Resorces\Scripts\GameEvent.cs" />
+    <Compile Include="Assets\Resorces\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXUnityMeshGetter.cs" />
+    <Compile Include="Assets\Resorces\Scripts\TakeBonus.cs" />
     <Compile Include="Assets\Resorces\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Resorces\Scripts\BallMovement.cs" />
     <Compile Include="Assets\Resorces\Scripts\MillAnimationChanger.cs" />
     <Compile Include="Assets\Resorces\Scripts\GlobalStringVars.cs" />
     <Compile Include="Assets\Resorces\Scripts\BallController.cs" />
     <Compile Include="Assets\Resorces\Scripts\GamePause.cs" />
-    <Compile Include="Assets\Resorces\Scripts\AnimationController.cs" />
+    <Compile Include="Assets\Resorces\Scripts\BonusTakeEffect.cs" />
+    <Compile Include="Assets\Resorces\Scripts\PlayerDestroy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -733,11 +736,17 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -751,6 +760,9 @@
     <Reference Include="Autodesk.Fbx">
       <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -759,6 +771,9 @@
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
