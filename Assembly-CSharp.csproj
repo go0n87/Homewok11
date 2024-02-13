@@ -61,6 +61,7 @@
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXExporter.cs" />
     <Compile Include="Assets\Resorces\Scripts\GameEvent.cs" />
     <Compile Include="Assets\Resorces\Scripts\BonusTakeEffect.cs" />
+    <Compile Include="Assets\Resorces\Scripts\CalculateBonus.cs" />
     <Compile Include="Assets\Resorces\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Packages\UnityFBXExporter\FBXUnityMeshGetter.cs" />
     <Compile Include="Assets\Resorces\Scripts\TakeBonus.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Assets\Resorces\Scripts\GlobalStringVars.cs" />
     <Compile Include="Assets\Resorces\Scripts\BallController.cs" />
     <Compile Include="Assets\Resorces\Scripts\GamePause.cs" />
-    <Compile Include="Assets\Resorces\Scripts\CalculateBonus.cs" />
+    <Compile Include="Assets\Resorces\Scripts\QuitGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

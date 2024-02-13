@@ -368,6 +368,7 @@
 "Assets/Resorces/Scripts/GlobalStringVars.cs"
 "Assets/Resorces/Scripts/MillAnimationChanger.cs"
 "Assets/Resorces/Scripts/PlayerDestroy.cs"
+"Assets/Resorces/Scripts/QuitGame.cs"
 "Assets/Resorces/Scripts/TakeBonus.cs"
 -langversion:9.0
 
