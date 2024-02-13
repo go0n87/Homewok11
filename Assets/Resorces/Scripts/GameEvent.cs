@@ -10,7 +10,7 @@ public class GameEvent : MonoBehaviour
     public GameObject PauseButton;
     public GameObject ExplosionEffect;
     public Text EventText;
-    enum EventsList { GameOver, LevelComplieted}
+    enum EventsList { GameOver, LevelComplieted, GameComplieted}
     [SerializeField] EventsList CurrentEvent;
     void OnTriggerEnter(Collider other)
     {
@@ -20,9 +20,15 @@ public class GameEvent : MonoBehaviour
             {
                 DestroyPlayer(other.gameObject);
             }
+            else if (CurrentEvent == EventsList.GameComplieted)
+            {
+                CheckTypeEvenet(false);
+                ExplosionEffect.GetComponent<ParticleSystem>().Play();
+                Destroy(other.gameObject);
+            }
             else
             {
-                CheckTypeEvenet();
+                CheckTypeEvenet(true);
             }
         }
     }
@@ -36,23 +42,28 @@ public class GameEvent : MonoBehaviour
             }
             else
             {
-                CheckTypeEvenet();
+                CheckTypeEvenet(true);
             }            
         }
     }
-    private void CheckTypeEvenet()
+    private void CheckTypeEvenet(bool _stopTime)
     {
-        Time.timeScale = 0;
-        GamePanel.SetActive(true);
-        EventButton.SetActive(true);        
+        if (_stopTime) {Time.timeScale = 0;}      
+        GamePanel.SetActive(true);               
         PauseButton.SetActive(false);
         if (CurrentEvent == EventsList.GameOver)
         {
+            EventButton.SetActive(true);
             EventText.text = "Game over";
         }
         else if (CurrentEvent == EventsList.LevelComplieted)
         {
+            EventButton.SetActive(true);
             EventText.text = "Level complieted!";
+        }
+        else if (CurrentEvent == EventsList.GameComplieted)
+        {            
+            EventText.text = "Congratulations! You won the game!";
         }
     }
     private void DestroyPlayer(GameObject _playerObject)
@@ -68,6 +79,6 @@ public class GameEvent : MonoBehaviour
         yield return new WaitForSeconds(3);
 
         Destroy(ExplosionEffect);
-        CheckTypeEvenet();
+        CheckTypeEvenet(true);
     }
 }
